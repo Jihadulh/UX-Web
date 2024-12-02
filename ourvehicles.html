@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Vehicles - SwiftKeys Car Hire</title>
+    <link rel="stylesheet" href="carhire.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="https://via.placeholder.com/150x50" alt="Swift Keys Logo">
+                <h1>Swift Keys</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourvehicles.html" class="active">Our Vehicles</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="quick-filter">
+        <nav class="filter-nav">
+            <a href="#luxury" class="filter-link">Luxury Cars</a>
+            <a href="#sports" class="filter-link">Sports Cars</a>
+            <a href="#family" class="filter-link">Family Cars</a>
+        </nav>
+    </div>
+
+    <div class="search-filters">
+        <div class="search-container">
+            <input type="text" placeholder="Search vehicles..." class="search-input">
+            <div class="filter-options">
+                <select class="price-filter">
+                    <option value="">Price Range</option>
+                    <option value="0-150">Under £150/day</option>
+                    <option value="150-250">£150 - £250/day</option>
+                    <option value="250+">Over £250/day</option>
+                </select>
+                <select class="seats-filter">
+                    <option value="">Seats</option>
+                    <option value="2">2 Seats</option>
+                    <option value="5">5 Seats</option>
+                    <option value="7+">7+ Seats</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Luxury Cars Section -->
+        <section id="luxury" class="vehicle-section">
+            <h2 class="section-title">Luxury Cars</h2>
+            <div class="comparison-bar" style="display: none;">
+                <div class="comparison-content">
+                    <h3>Compare Vehicles</h3>
+                    <div class="selected-vehicles"></div>
+                    <button class="cta-button compare-btn">Compare Selected</button>
+                </div>
+            </div>
+            <div class="vehicles-grid">
+                <div class="vehicle-card">
+                    <input type="checkbox" class="compare-checkbox" title="Select for comparison">
+                    <img src="https://via.placeholder.com/800x600" alt="Mercedes S-Class" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Mercedes S-Class</h3>
+                        <p class="vehicle-type">Premium Sedan</p>
+                        <ul class="vehicle-features">
+                            <li>5 Seats</li>
+                            <li>Automatic</li>
+                            <li>Premium Sound System</li>
+                        </ul>
+                        <p class="price">From £200/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <input type="checkbox" class="compare-checkbox" title="Select for comparison">
+                    <img src="https://via.placeholder.com/800x600" alt="BMW 7 Series" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>BMW 7 Series</h3>
+                        <p class="vehicle-type">Luxury Sedan</p>
+                        <ul class="vehicle-features">
+                            <li>5 Seats</li>
+                            <li>Automatic</li>
+                            <li>Executive Package</li>
+                        </ul>
+                        <p class="price">From £190/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Rolls-Royce Ghost" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Rolls-Royce Ghost</h3>
+                        <p class="vehicle-type">Ultra Luxury Sedan</p>
+                        <ul class="vehicle-features">
+                            <li>4 Seats</li>
+                            <li>Chauffeur Service</li>
+                            <li>Starlight Headliner</li>
+                        </ul>
+                        <p class="price">From £500/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Bentley Flying Spur" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Bentley Flying Spur</h3>
+                        <p class="vehicle-type">Premium Luxury Sedan</p>
+                        <ul class="vehicle-features">
+                            <li>5 Seats</li>
+                            <li>W12 Engine</li>
+                            <li>Mulliner Package</li>
+                        </ul>
+                        <p class="price">From £450/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Maybach S-Class" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Mercedes-Maybach S-Class</h3>
+                        <p class="vehicle-type">Executive Luxury</p>
+                        <ul class="vehicle-features">
+                            <li>4 Seats</li>
+                            <li>Executive Rear Seats</li>
+                            <li>Burmester 4D Sound</li>
+                        </ul>
+                        <p class="price">From £400/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sports Cars Section -->
+        <section id="sports" class="vehicle-section">
+            <h2 class="section-title">Sports Cars</h2>
+            <div class="comparison-bar" style="display: none;">
+                <div class="comparison-content">
+                    <h3>Compare Vehicles</h3>
+                    <div class="selected-vehicles"></div>
+                    <button class="cta-button compare-btn">Compare Selected</button>
+                </div>
+            </div>
+            <div class="vehicles-grid">
+                <div class="vehicle-card">
+                    <input type="checkbox" class="compare-checkbox" title="Select for comparison">
+                    <img src="https://via.placeholder.com/800x600" alt="Porsche 911" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Porsche 911</h3>
+                        <p class="vehicle-type">Sports Coupe</p>
+                        <ul class="vehicle-features">
+                            <li>2 Seats</li>
+                            <li>PDK Transmission</li>
+                            <li>Sport Chrono Package</li>
+                        </ul>
+                        <p class="price">From £250/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <input type="checkbox" class="compare-checkbox" title="Select for comparison">
+                    <img src="https://via.placeholder.com/800x600" alt="Audi R8" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Audi R8</h3>
+                        <p class="vehicle-type">Supercar</p>
+                        <ul class="vehicle-features">
+                            <li>2 Seats</li>
+                            <li>V10 Engine</li>
+                            <li>Quattro AWD</li>
+                        </ul>
+                        <p class="price">From £300/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Ferrari F8 Tributo" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Ferrari F8 Tributo</h3>
+                        <p class="vehicle-type">Supercar</p>
+                        <ul class="vehicle-features">
+                            <li>2 Seats</li>
+                            <li>V8 Twin-Turbo</li>
+                            <li>Carbon Package</li>
+                        </ul>
+                        <p class="price">From £600/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="McLaren 720S" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>McLaren 720S</h3>
+                        <p class="vehicle-type">Performance Supercar</p>
+                        <ul class="vehicle-features">
+                            <li>2 Seats</li>
+                            <li>Dihedral Doors</li>
+                            <li>Track Mode</li>
+                        </ul>
+                        <p class="price">From £550/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Aston Martin DBS" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Aston Martin DBS</h3>
+                        <p class="vehicle-type">Grand Tourer</p>
+                        <ul class="vehicle-features">
+                            <li>2+2 Seats</li>
+                            <li>V12 Engine</li>
+                            <li>British Luxury</li>
+                        </ul>
+                        <p class="price">From £500/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Cars Section -->
+        <section id="family" class="vehicle-section">
+            <h2 class="section-title">Family Cars</h2>
+            <div class="comparison-bar" style="display: none;">
+                <div class="comparison-content">
+                    <h3>Compare Vehicles</h3>
+                    <div class="selected-vehicles"></div>
+                    <button class="cta-button compare-btn">Compare Selected</button>
+                </div>
+            </div>
+            <div class="vehicles-grid">
+                <div class="vehicle-card">
+                    <input type="checkbox" class="compare-checkbox" title="Select for comparison">
+                    <img src="https://via.placeholder.com/800x600" alt="Volvo XC90" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Volvo XC90</h3>
+                        <p class="vehicle-type">Luxury SUV</p>
+                        <ul class="vehicle-features">
+                            <li>7 Seats</li>
+                            <li>Safety Package</li>
+                            <li>Family Entertainment</li>
+                        </ul>
+                        <p class="price">From £180/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <input type="checkbox" class="compare-checkbox" title="Select for comparison">
+                    <img src="https://via.placeholder.com/800x600" alt="Mercedes V-Class" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Mercedes V-Class</h3>
+                        <p class="vehicle-type">Luxury MPV</p>
+                        <ul class="vehicle-features">
+                            <li>8 Seats</li>
+                            <li>Executive Interior</li>
+                            <li>Large Luggage Space</li>
+                        </ul>
+                        <p class="price">From £170/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="BMW X7" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>BMW X7</h3>
+                        <p class="vehicle-type">Luxury SUV</p>
+                        <ul class="vehicle-features">
+                            <li>7 Seats</li>
+                            <li>Panoramic Roof</li>
+                            <li>Entertainment Plus</li>
+                        </ul>
+                        <p class="price">From £220/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Audi Q8" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Audi Q8</h3>
+                        <p class="vehicle-type">Premium SUV</p>
+                        <ul class="vehicle-features">
+                            <li>5 Seats</li>
+                            <li>Virtual Cockpit</li>
+                            <li>Bang & Olufsen Sound</li>
+                        </ul>
+                        <p class="price">From £200/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="vehicle-card">
+                    <img src="https://via.placeholder.com/800x600" alt="Range Rover Autobiography" class="vehicle-image">
+                    <div class="vehicle-details">
+                        <h3>Range Rover Autobiography</h3>
+                        <p class="vehicle-type">Luxury SUV</p>
+                        <ul class="vehicle-features">
+                            <li>5 Seats</li>
+                            <li>Executive Class Comfort</li>
+                            <li>Off-Road Capability</li>
+                        </ul>
+                        <p class="price">From £250/day</p>
+                        <a href="contact.html" class="cta-button">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h5>Contact Info</h5>
+                <p>Email: info@swiftkeys.com</p>
+                <p>Phone:  071234567</p>
+            </div>
+            <div class="footer-section">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="ourvehicles.html">Our Vehicles</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">Facebook</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Swift Keys Car Hire. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
